@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect College</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #263238; }
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 20px; flex-wrap: wrap; padding: 20px 8%; background: #12372a;
+}
+.logo { color: white; font-weight: bold; font-size: 1.3rem; text-decoration: none; }
+.nav-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.nav-links a { color: white; text-decoration: none; }
+.nav-links a:hover { color: #f4d58d; }
+.hero { padding: 75px 8%; background: #e9f5ee; }
+.hero h1 { color: #12372a; font-size: clamp(2.2rem, 5vw, 3.5rem); max-width: 700px; margin: 10px 0; }
+.hero p { max-width: 650px; }
+.eyebrow { color: #39765a; letter-spacing: 2px; font-weight: bold; }
+.button {
+  display: inline-block; margin-top: 20px; padding: 11px 17px;
+  background: #276749; color: white; text-decoration: none; border-radius: 6px;
+}
+.button:hover { background: #12372a; }
+.section { padding: 52px 8%; }
+.section h2 { text-align: center; color: #12372a; margin-bottom: 24px; }
+.light { background: #f5f8f6; }
+.center-text { text-align: center; max-width: 760px; margin: auto; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
+.card { padding: 22px; background: white; border: 1px solid #dce7df; border-radius: 9px; }
+.card h3 { color: #276749; margin: 8px 0; }
+.symbol { font-size: 1.8rem; }
+.admission { background: #e9f5ee; }
+.admission p, .admission ul { max-width: 700px; margin: 0 auto 12px; }
+.admission ul { padding-left: 22px; }
+.admission .button { margin-left: max(0px, calc((100% - 700px) / 2)); }
+.note { font-size: .85rem; color: #52645a; margin-top: 15px !important; }
+footer { text-align: center; padding: 18px; background: #12372a; color: white; }
+@media (max-width: 600px) {
+  .nav, .hero, .section { padding-left: 6%; padding-right: 6%; }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#home">CampusConnect</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#admissions">Admissions</a>
+      </div>
+    </nav>
+    <section class="hero" id="home">
+      <p class="eyebrow">LEARN · GROW · LEAD</p>
+      <h1>Build Your Future With Us</h1>
+      <p>A welcoming learning environment for curious minds, practical skills, and bright ideas.</p>
+      <a class="button" href="#admissions">Explore Admissions</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2>Welcome to Our College</h2>
+      <p class="center-text">We aim to support students through quality teaching, practical learning, teamwork, and activities that prepare them for the future.</p>
+    </section>
+
+    <section class="section light" id="courses">
+      <h2>Popular Departments</h2>
+      <div class="cards">
+        <article class="card"><div class="symbol">💻</div><h3>Computer Science</h3><p>Programming, software development, and computing fundamentals.</p></article>
+        <article class="card"><div class="symbol">🤖</div><h3>AI & Machine Learning</h3><p>Learning how data and intelligent systems can solve problems.</p></article>
+        <article class="card"><div class="symbol">⚡</div><h3>Electrical Engineering</h3><p>Exploring electrical systems, circuits, and technology.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="facilities">
+      <h2>Campus Facilities</h2>
+      <div class="cards">
+        <article class="card"><h3>Modern Labs</h3><p>Practice concepts through guided laboratory sessions.</p></article>
+        <article class="card"><h3>Library</h3><p>Find books and study resources for independent learning.</p></article>
+        <article class="card"><h3>Student Clubs</h3><p>Build teamwork through technical and cultural activities.</p></article>
+      </div>
+    </section>
+
+    <section class="section admission" id="admissions">
+      <h2>Admissions</h2>
+      <p>Interested in joining us? Prepare your academic documents and check the official admission requirements before applying.</p>
+      <ul>
+        <li>Review the course options.</li>
+        <li>Check eligibility and application dates.</li>
+        <li>Submit the required application and documents.</li>
+      </ul>
+      <a class="button" href="mailto:admissions@example.com">Contact Admissions</a>
+      <p class="note">Demo website: replace this sample contact with the college's official details.</p>
+    </section>
+  </main>
+  <footer><p>© 2026 CampusConnect · Sample college website for learning</p></footer>
+</body>
+</html>
