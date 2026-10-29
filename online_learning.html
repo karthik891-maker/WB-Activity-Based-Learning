@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSpring Learning</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #26324b; background: #fff; }
+.top { background: #f1f5ff; }
+.nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 20px 8%; }
+.logo { font-size: 1.35rem; font-weight: bold; color: #3046a5; text-decoration: none; }
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: #26324b; text-decoration: none; }
+.nav-links a:hover { color: #3046a5; }
+.hero { display: grid; gap: 35px; align-items: center; padding: 55px 8% 70px; }
+.eyebrow { color: #5266c8; letter-spacing: 2px; font-size: .85rem; font-weight: bold; }
+.hero h1 { color: #202f78; line-height: 1.15; margin: 12px 0; }
+.hero p { max-width: 600px; }
+.button { display: inline-block; margin-top: 20px; padding: 11px 17px; border-radius: 6px; background: #4055bd; color: white; text-decoration: none; font-weight: bold; }
+.button:hover { background: #263783; }
+.hero-box { background: white; border-radius: 12px; padding: 28px; box-shadow: 0 5px 18px #243b7020; }
+.big-icon { font-size: 2.5rem; }
+.hero-box h2 { color: #202f78; margin: 10px 0; font-size: 1.35rem; }
+.section { padding: 52px 8%; }
+.section h2 { color: #202f78; text-align: center; margin-bottom: 12px; }
+.center-text { text-align: center; margin-bottom: 25px; }
+.cards { display: grid; gap: 20px; margin-top: 25px; }
+.course-card { border: 1px solid #e0e5f2; border-radius: 10px; background: white; }
+.course-art { min-height: 125px; display: grid; place-items: center; font-size: 2rem; font-weight: bold; color: white; }
+.blue { background: #4568c8; }
+.green { background: #36876b; }
+.orange { background: #d98b38; }
+.course-content { padding: 20px; }
+.tag { display: inline-block; background: #edf0ff; color: #4055bd; padding: 3px 8px; border-radius: 4px; font-size: .72rem; font-weight: bold; }
+.course-content h3 { margin: 10px 0; color: #263783; }
+.meta { color: #68738a; font-size: .9rem; margin-top: 12px; }
+.course-link { display: inline-block; color: #4055bd; font-weight: bold; text-decoration: none; margin-top: 12px; }
+.course-link:hover { text-decoration: underline; }
+.benefits { background: #f7f8fc; }
+.benefit { padding: 22px; border-radius: 9px; background: white; border: 1px solid #e0e5f2; }
+.benefit h3 { color: #4055bd; margin-bottom: 8px; }
+.contact { text-align: center; background: #e9edff; }
+.note { font-size: .85rem; color: #59647a; margin-top: 18px; }
+footer { text-align: center; padding: 18px; color: white; background: #202f78; }
+
+  </style>
+</head>
+<body>
+  <header class="top">
+    <nav class="nav">
+      <a class="logo" href="#home">SkillSpring</a>
+      <div class="nav-links">
+        <a href="#courses">Courses</a>
+        <a href="#benefits">Why Learn?</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">LEARN SOMETHING NEW</p>
+        <h1>Small Lessons.<br>Big Possibilities.</h1>
+        <p>Build useful skills at your own pace with beginner-friendly courses in technology and creativity.</p>
+        <a class="button" href="#courses">Browse Courses</a>
+      </div>
+      <div class="hero-box">
+        <span class="big-icon">📚</span>
+        <h2>Your next skill starts here</h2>
+        <p>Choose a topic, learn step by step, and keep practising.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="courses">
+      <h2>Featured Courses</h2>
+      <p class="center-text">Sample courses for learners who are starting out.</p>
+      <div class="cards">
+        <article class="course-card">
+          <div class="course-art blue">HTML</div>
+          <div class="course-content"><span class="tag">BEGINNER</span><h3>HTML Fundamentals</h3><p>Learn headings, paragraphs, links, images, and forms.</p><p class="meta">6 lessons · 2 hours</p><a class="course-link" href="mailto:learn@example.com?subject=HTML%20course">View Course →</a></div>
+        </article>
+        <article class="course-card">
+          <div class="course-art green">CSS</div>
+          <div class="course-content"><span class="tag">BEGINNER</span><h3>CSS Essentials</h3><p>Style webpages with colors, spacing, cards, and layouts.</p><p class="meta">8 lessons · 3 hours</p><a class="course-link" href="mailto:learn@example.com?subject=CSS%20course">View Course →</a></div>
+        </article>
+        <article class="course-card">
+          <div class="course-art orange">PY</div>
+          <div class="course-content"><span class="tag">START HERE</span><h3>Python Basics</h3><p>Understand variables, decisions, loops, and simple programs.</p><p class="meta">10 lessons · 4 hours</p><a class="course-link" href="mailto:learn@example.com?subject=Python%20course">View Course →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section benefits" id="benefits">
+      <h2>Why Learn With SkillSpring?</h2>
+      <div class="cards">
+        <article class="benefit"><h3>Clear Lessons</h3><p>Simple explanations that build one concept at a time.</p></article>
+        <article class="benefit"><h3>Learn at Your Pace</h3><p>Study when you have time and revisit topics as needed.</p></article>
+        <article class="benefit"><h3>Practice First</h3><p>Try small activities to strengthen your understanding.</p></article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2>Start Learning Today</h2>
+      <p>Pick a course and begin building your skills one lesson at a time.</p>
+      <a class="button" href="">Ask About Courses</a>
+      <p class="note">Demo interface only. Course links use sample email addresses; no enrollment system is connected.</p>
+    </section>
+  </main>
+  <footer><p>© 2026 SkillSpring · A simple HTML and CSS learning project</p></footer>
+</body>
+</html>

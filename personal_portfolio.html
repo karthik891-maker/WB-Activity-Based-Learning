@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #203047;
+  background: #ffffff;
+}
+.hero {
+  color: white;
+  background: #183b56;
+  padding: 22px 8% 70px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.logo { color: white; font-size: 1.3rem; font-weight: bold; text-decoration: none; }
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; }
+.nav-links a:hover { color: #a9d6e5; }
+.intro { max-width: 720px; padding-top: 75px; }
+.eyebrow { color: #a9d6e5; letter-spacing: 3px; font-size: .85rem; }
+h1 {  margin: 8px 0; }
+.subtitle { font-size: 1.15rem; margin-bottom: 14px; }
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 11px 18px;
+  border-radius: 6px;
+  background: #a9d6e5;
+  color: #183b56;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover { background: white; }
+.section { padding: 55px 8%; }
+.section h2 { text-align: center; margin-bottom: 25px; color: #183b56; }
+.soft { background: #f1f6f9; }
+.center-text { max-width: 760px; margin: 0 auto 10px; text-align: center; }
+.cards { display: grid; gap: 18px; }
+.card {
+  background: white;
+  padding: 22px;
+  border: 1px solid #dce6ec;
+  border-radius: 10px;
+}
+.card h3 { color: #236477; margin-bottom: 8px; }
+footer { text-align: center; background: #102a43; color: white; padding: 18px; }
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="logo" href="#home">MyPortfolio</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <section class="intro" id="home">
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1>Karthik</h1>
+      <p class="subtitle">First-year CSM-2 Student | Aspiring Developer</p>
+      <p>I enjoy learning how websites and programs are built. This is a simple introduction to me and my work.</p>
+      <a class="button" href="#projects">View My Projects</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p class="center-text">I am a student who enjoys technology, problem-solving, and learning new skills. I am currently building my foundation in programming and web development.</p>
+    </section>
+
+    <section class="section soft" id="skills">
+      <h2>My Skills</h2>
+      <div class="cards">
+        <article class="card"><h3>HTML</h3><p>Creating the structure of webpages.</p></article>
+        <article class="card"><h3>CSS</h3><p>Styling pages with colors, spacing, and layouts.</p></article>
+        <article class="card"><h3>Python</h3><p>Writing beginner-friendly programs.</p></article>
+        <article class="card"><h3>Java</h3><p>Learning programming fundamentals.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>My Projects</h2>
+      <div class="cards">
+        <article class="card"><h3>Portfolio Website</h3><p>A webpage introducing me and my skills.</p></article>
+        <article class="card"><h3>Python Programs</h3><p>Small programs created for practice.</p></article>
+        <article class="card"><h3>Student Dashboard</h3><p>A simple concept for displaying academic details.</p></article>
+      </div>
+    </section>
+
+    <section class="section soft" id="contact">
+      <h2>Contact Me</h2>
+      <p class="center-text">Email: karthik@example.com</p>
+      <p class="center-text">Location: Vijayawada</p>
+    </section>
+  </main>
+  <footer><p>© 2026 Karthik· Made with HTML and CSS</p></footer>
+</body>
+</html>
